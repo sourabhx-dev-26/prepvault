@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <title>PrepVault — PDFs, Mock Tests, Notes & Quizzes</title>
+  <meta name="description" content="Premium education marketplace prototype for PDFs, mock tests, notes, current affairs and quizzes." />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="background-grid"></div>
+  <div class="orb orb-one"></div>
+  <div class="orb orb-two"></div>
+
+  <header class="navbar">
+    <a href="#home" class="brand">
+      <span class="brand-logo">PV</span>
+      <span>
+        <strong>PrepVault</strong>
+        <small>Premium Exam Store</small>
+      </span>
+    </a>
+
+    <nav class="desktop-nav">
+      <a href="#products">Products</a>
+      <a href="#tests">Mock Tests</a>
+      <a href="#quiz">Quizzes</a>
+      <a href="#admin">Admin</a>
+    </nav>
+
+    <a href="#products" class="nav-cta">Explore Store</a>
+  </header>
+
+  <main>
+    <section id="home" class="hero section">
+      <div class="hero-content">
+        <div class="tag">
+          <span class="live-dot"></span>
+          Digital PDFs • Mock Tests • Current Affairs
+        </div>
+
+        <h1>Sell premium study material with a powerful exam platform.</h1>
+
+        <p>
+          A professional prototype for selling PDFs, notes, mock tests, current affairs
+          and quizzes. Built for GitHub Pages, mobile-friendly, and ready to show as a demo.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#products" class="primary-btn">View Products</a>
+          <a href="#tests" class="secondary-btn">Try Mock Test</a>
+        </div>
+
+        <div class="trust-row">
+          <div>
+            <strong>20K+</strong>
+            <span>student-ready layout</span>
+          </div>
+          <div>
+            <strong>Fast</strong>
+            <span>static GitHub hosting</span>
+          </div>
+          <div>
+            <strong>App</strong>
+            <span>convertible later</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-card glass">
+        <div class="phone-top">
+          <span></span>
+          <small>Student Dashboard</small>
+          <span></span>
+        </div>
+
+        <div class="score-card">
+          <p>Today’s Learning Progress</p>
+          <h3>74%</h3>
+          <div class="progress">
+            <span style="width:74%"></span>
+          </div>
+        </div>
+
+        <div class="mini-list">
+          <div>
+            <span class="icon gold">📘</span>
+            <div>
+              <strong>UPSC Current Affairs PDF</strong>
+              <small>Unlocked • June Edition</small>
+            </div>
+          </div>
+          <div>
+            <span class="icon blue">📝</span>
+            <div>
+              <strong>SSC CGL Mock Test</strong>
+              <small>40 questions • 60 minutes</small>
+            </div>
+          </div>
+          <div>
+            <span class="icon green">⚡</span>
+            <div>
+              <strong>Daily Quiz</strong>
+              <small>10 questions • instant result</small>
+            </div>
+          </div>
+        </div>
+
+        <button class="full-btn">Continue Learning</button>
+      </div>
+    </section>
+
+    <section class="section stats-section">
+      <div class="stat-card glass">
+        <strong>₹99–₹999</strong>
+        <span>PDF / Notes pricing</span>
+      </div>
+      <div class="stat-card glass">
+        <strong>Mock Tests</strong>
+        <span>paid or free series</span>
+      </div>
+      <div class="stat-card glass">
+        <strong>Razorpay</strong>
+        <span>payment integration later</span>
+      </div>
+      <div class="stat-card glass">
+        <strong>Firebase</strong>
+        <span>app backend later</span>
+      </div>
+    </section>
+
+    <section id="products" class="section">
+      <div class="section-head">
+        <span class="eyebrow">Digital Store</span>
+        <h2>Sell PDFs, notes and current affairs packs.</h2>
+        <p>
+          These cards are demo products. Later you can connect real PDF upload,
+          payment unlock, student login and download protection.
+        </p>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section id="tests" class="section split-section">
+      <div class="section-head left">
+        <span class="eyebrow">Mock Test Engine</span>
+        <h2>Exam-style mock tests with timer and instant score.</h2>
+        <p>
+          This is a front-end prototype. In the real version, questions will come from
+          database and students will get result analytics after submission.
+        </p>
+
+        <div class="feature-list">
+          <div>✅ Timer based tests</div>
+          <div>✅ Question navigation</div>
+          <div>✅ Result and score page</div>
+          <div>✅ Paid test series support later</div>
+        </div>
+      </div>
+
+      <div class="test-card glass">
+        <div class="test-header">
+          <div>
+            <small>Live Demo Test</small>
+            <h3>General Awareness Mini Mock</h3>
+          </div>
+          <span id="timer">05:00</span>
+        </div>
+
+        <div class="question-box">
+          <p id="questionText">Loading question...</p>
+          <div id="optionBox" class="options"></div>
+        </div>
+
+        <div class="test-actions">
+          <button id="prevQuestion" class="secondary-btn small">Previous</button>
+          <button id="nextQuestion" class="primary-btn small">Next</button>
+        </div>
+
+        <button id="submitTest" class="full-btn">Submit Test</button>
+        <div id="resultBox" class="result-box"></div>
+      </div>
+    </section>
+
+    <section id="quiz" class="section">
+      <div class="section-head">
+        <span class="eyebrow">Daily Quiz</span>
+        <h2>Keep students engaged with daily quizzes.</h2>
+        <p>
+          Perfect for current affairs, GK, reasoning, English vocabulary and exam revision.
+        </p>
+      </div>
+
+      <div class="quiz-grid">
+        <div class="quiz-card glass">
+          <span>🔥</span>
+          <h3>Current Affairs Quiz</h3>
+          <p>10 questions from today’s news and monthly PDFs.</p>
+          <button class="secondary-btn">Start Quiz</button>
+        </div>
+        <div class="quiz-card glass">
+          <span>🧠</span>
+          <h3>Reasoning Practice</h3>
+          <p>Quick mental ability questions with instant feedback.</p>
+          <button class="secondary-btn">Start Quiz</button>
+        </div>
+        <div class="quiz-card glass">
+          <span>📚</span>
+          <h3>Static GK Drill</h3>
+          <p>Revision quiz for history, geography, polity and economy.</p>
+          <button class="secondary-btn">Start Quiz</button>
+        </div>
+      </div>
+    </section>
+
+    <section id="admin" class="section admin-section">
+      <div class="admin-panel glass">
+        <div class="section-head left">
+          <span class="eyebrow">Admin Preview</span>
+          <h2>Upload and manage products from one dashboard.</h2>
+          <p>
+            Final website me yahi section real admin panel banega jahan se PDFs,
+            notes, mock tests, coupons and orders manage honge.
+          </p>
+        </div>
+
+        <div class="admin-grid">
+          <div class="admin-card">
+            <small>Total Revenue</small>
+            <strong>₹48,920</strong>
+          </div>
+          <div class="admin-card">
+            <small>PDF Orders</small>
+            <strong>1,284</strong>
+          </div>
+          <div class="admin-card">
+            <small>Active Tests</small>
+            <strong>36</strong>
+          </div>
+          <div class="admin-card">
+            <small>Students</small>
+            <strong>18,540</strong>
+          </div>
+        </div>
+
+        <div class="upload-box">
+          <div>
+            <strong>Upload New PDF</strong>
+            <span>Title, price, category, thumbnail and file upload will come here.</span>
+          </div>
+          <button class="primary-btn small">Add Product</button>
+        </div>
+      </div>
+    </section>
+
+    <section class="section roadmap-section">
+      <div class="section-head">
+        <span class="eyebrow">Build Roadmap</span>
+        <h2>Prototype now. Real business platform later.</h2>
+      </div>
+
+      <div class="roadmap">
+        <div>
+          <span>01</span>
+          <h3>GitHub Prototype</h3>
+          <p>Static website to show idea, UI, products and mock test demo.</p>
+        </div>
+        <div>
+          <span>02</span>
+          <h3>Payment + Login</h3>
+          <p>Razorpay, student accounts, my purchases and protected PDFs.</p>
+        </div>
+        <div>
+          <span>03</span>
+          <h3>Mock Test Backend</h3>
+          <p>Admin question upload, timer, result, rank and analytics.</p>
+        </div>
+        <div>
+          <span>04</span>
+          <h3>Mobile App</h3>
+          <p>Flutter app using same backend and same product database.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <strong>PrepVault</strong>
+    <p>Premium education marketplace prototype. Built for GitHub Pages.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
