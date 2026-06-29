@@ -215,47 +215,78 @@
         </div>
       </div>
     </section>
+<section id="admin" class="section admin-section">
+  <div class="admin-panel glass">
+    <div class="section-head left">
+      <span class="eyebrow">Admin Preview</span>
+      <h2>Upload and manage PDFs from one dashboard.</h2>
+      <p>
+        Admin yahan se kisi bhi type ka PDF upload kar sakta hai:
+        notes, mock test PDF, current affairs, answer key, syllabus, practice set, etc.
+      </p>
+    </div>
 
-    <section id="admin" class="section admin-section">
-      <div class="admin-panel glass">
-        <div class="section-head left">
-          <span class="eyebrow">Admin Preview</span>
-          <h2>Upload and manage products from one dashboard.</h2>
-          <p>
-            Final website me yahi section real admin panel banega jahan se PDFs,
-            notes, mock tests, coupons and orders manage honge.
-          </p>
+    <div class="admin-grid">
+      <div class="admin-card">
+        <small>Total Revenue</small>
+        <strong>₹48,920</strong>
+      </div>
+      <div class="admin-card">
+        <small>PDF Orders</small>
+        <strong>1,284</strong>
+      </div>
+      <div class="admin-card">
+        <small>Active Tests</small>
+        <strong>36</strong>
+      </div>
+      <div class="admin-card">
+        <small>Students</small>
+        <strong>18,540</strong>
+      </div>
+    </div>
+
+    <form id="adminUploadForm" class="admin-upload-form">
+      <div class="form-row">
+        <div class="form-field">
+          <label for="pdfTitle">PDF Title</label>
+          <input id="pdfTitle" type="text" placeholder="Example: UPSC June Current Affairs" required />
         </div>
 
-        <div class="admin-grid">
-          <div class="admin-card">
-            <small>Total Revenue</small>
-            <strong>₹48,920</strong>
-          </div>
-          <div class="admin-card">
-            <small>PDF Orders</small>
-            <strong>1,284</strong>
-          </div>
-          <div class="admin-card">
-            <small>Active Tests</small>
-            <strong>36</strong>
-          </div>
-          <div class="admin-card">
-            <small>Students</small>
-            <strong>18,540</strong>
-          </div>
-        </div>
-
-        <div class="upload-box">
-          <div>
-            <strong>Upload New PDF</strong>
-            <span>Title, price, category, thumbnail and file upload will come here.</span>
-          </div>
-          <button class="primary-btn small">Add Product</button>
+        <div class="form-field">
+          <label for="pdfCategory">PDF Type / Category</label>
+          <input id="pdfCategory" type="text" placeholder="Notes, Mock Test, GK, Current Affairs..." required />
         </div>
       </div>
-    </section>
 
+      <div class="form-row">
+        <div class="form-field">
+          <label for="pdfPrice">Price</label>
+          <input id="pdfPrice" type="number" placeholder="99" min="0" required />
+        </div>
+
+        <div class="form-field">
+          <label for="pdfFile">Choose PDF File</label>
+          <input id="pdfFile" type="file" accept="application/pdf,.pdf" required />
+        </div>
+      </div>
+
+      <div class="form-field">
+        <label for="pdfDescription">Description</label>
+        <textarea id="pdfDescription" rows="4" placeholder="Write short details about this PDF..." required></textarea>
+      </div>
+
+      <div class="upload-box">
+        <div>
+          <strong>Upload New PDF</strong>
+          <span>PDF product card automatically store section me show hoga.</span>
+        </div>
+        <button type="submit" class="primary-btn small">Upload PDF</button>
+      </div>
+
+      <div id="adminUploadStatus" class="admin-status"></div>
+    </form>
+  </div>
+</section>
     <section class="section roadmap-section">
       <div class="section-head">
         <span class="eyebrow">Build Roadmap</span>
